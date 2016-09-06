@@ -9,6 +9,12 @@ This repro contains the updated Xamarin Forms BindablePicker control (8/12/2016 
 
 This control is a replacement for the Xamarin Forms Picker.
 
+## Bug Fixes
+
+9-6-2016 - Corrected InternalSelectedValueChanged method to property check object equals. SelectedValuePath works with all data types now.
+
+8/12/2016 - Corrected the ItemsSource implementation, that failed to reload new collections property when the selected item was immediately reset after refreshing the ItemsSource.
+
 ## Demo Project
 The XamarinFormsBiundablePicker project is a simple Xamarin Forms, UWP project that demonstrates usage scenarios for the BindablePicker.
 
@@ -16,11 +22,7 @@ The BindablePicker class is in the Controls folder, grap this file and add to yo
 
 ## Features
 
-**bug fix** (9-6-2016) Corrected InternalSelectedValueChanged method to property check object equals. 
-
 **new**  (8/12/2016) BindablePicker supports binding the ItemsSource to an ObservableCollection
-
-**bug fix**  (8/12/2016) Corrected the ItemsSource implementation, that failed to reload new collections property when the selected item was immediately reset after refreshing the ItemsSource.
 
 ![Classfile](Art/classfile.png)
 
