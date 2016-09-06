@@ -3,17 +3,17 @@
 
     public class Person : ObservableObject {
 
-        String _country;
+        Int32 _countryId;
         String _firstName;
         String _lastName;
         String _nextVacationSpot;
         Sex _sex;
         String _state;
 
-        public String Country {
-            get { return _country; }
+        public Int32 CountryId {
+            get { return _countryId; }
             set {
-                _country = value;
+                _countryId = value;
                 RaisePropertyChanged();
             }
         }

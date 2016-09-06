@@ -54,8 +54,8 @@
         <controls:BindablePicker
             ItemsSource="{Binding Path=Countries}"
             DisplayMemberPath="Name"
-            SelectedValuePath="Abbreviation"
-            SelectedValue="{Binding Path=Person.Country, Mode=TwoWay}" />
+            SelectedValuePath="Id"
+            SelectedValue="{Binding Path=Person.CountryId, Mode=TwoWay}" />
 
         <Button
             Command="{Binding Path=RefreshVacationSpots}"

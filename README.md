@@ -16,9 +16,11 @@ The BindablePicker class is in the Controls folder, grap this file and add to yo
 
 ## Features
 
-**new**  BindablePicker supports binding the ItemsSource to an ObservableCollection (8/12/2016 Release)
+**bug fix** (9-6-2016) Corrected InternalSelectedValueChanged method to property check object equals. 
 
-**bug fix** Corrected the ItemsSource implementation, that failed to reload new collections property when the selected item was immediately reset after refreshing the ItemsSource. (8/12/2016 Release)
+**new**  (8/12/2016) BindablePicker supports binding the ItemsSource to an ObservableCollection
+
+**bug fix**  (8/12/2016) Corrected the ItemsSource implementation, that failed to reload new collections property when the selected item was immediately reset after refreshing the ItemsSource.
 
 ![Classfile](Art/classfile.png)
 

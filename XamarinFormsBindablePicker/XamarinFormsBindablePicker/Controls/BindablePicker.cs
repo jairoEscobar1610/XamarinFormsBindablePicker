@@ -144,7 +144,7 @@
                     if (item != null) {
                         var type = item.GetType();
                         var prop = type.GetRuntimeProperty(this.SelectedValuePath);
-                        if (prop.GetValue(item) == this.SelectedValue) {
+                        if (Object.Equals(prop.GetValue(item), this.SelectedValue)) {
                             selectedIndex = index;
                             selectedItem = item;
                             break;

@@ -41,7 +41,7 @@
         public PersonEditorViewModel() {
             var person = new Person();
             person.LastName = "Shifflett";
-            person.Country = "USA";
+            person.CountryId = 5;
             person.State = "NJ";
             person.FirstName = "Karl";
             person.NextVacationSpot = "Alaska";
@@ -49,11 +49,11 @@
             this.Person = person;
 
             var list = new List<Country>();
-            list.Add(new Country {Abbreviation = "BGR", Name = "Bulgaria"});
-            list.Add(new Country {Abbreviation = "JP", Name = "Japan"});
-            list.Add(new Country {Abbreviation = "ROU", Name = "Romania"});
-            list.Add(new Country {Abbreviation = "RUS", Name = "Russian Federation"});
-            list.Add(new Country {Abbreviation = "USA", Name = "United States"});
+            list.Add(new Country {Abbreviation = "BGR", Id = 1, Name = "Bulgaria"});
+            list.Add(new Country {Abbreviation = "JP", Id = 2, Name = "Japan"});
+            list.Add(new Country {Abbreviation = "ROU", Id = 3, Name = "Romania"});
+            list.Add(new Country {Abbreviation = "RUS", Id = 4, Name = "Russian Federation"});
+            list.Add(new Country {Abbreviation = "USA", Id = 5, Name = "United States"});
             this.Countries = list;
 
             this.Sexes = Enum.GetNames(typeof(Sex));
