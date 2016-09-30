@@ -14,6 +14,8 @@
 
         public ICommand AddOnItemToVacationSpots => new Command(AddOnItemToVacationSpotsExecute);
 
+        public ICommand ClearToVacationSpots => new Command(ClearToVacationSpotsExecute);
+
         public IEnumerable<Country> Countries { get; }
 
         public Person Person {
@@ -58,11 +60,15 @@
 
             this.Sexes = Enum.GetNames(typeof(Sex));
             this.States = new List<String> {"NC", "NJ", "NY"};
-            this.VacationSpots =new ObservableCollection<String>(new List<String> {"Alaska", "Montana", "Wyoming"});
+            this.VacationSpots = new ObservableCollection<String>(new List<String> {"Alaska", "Montana", "Wyoming"});
         }
 
         void AddOnItemToVacationSpotsExecute() {
             this.VacationSpots.Add("Hawaii");
+        }
+
+        void ClearToVacationSpotsExecute() {
+            this.VacationSpots.Clear();
         }
 
         void RefreshVacationSpotsExecute() {

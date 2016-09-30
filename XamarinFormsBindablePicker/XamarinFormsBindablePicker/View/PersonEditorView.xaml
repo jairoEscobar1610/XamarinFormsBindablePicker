@@ -57,6 +57,8 @@
             SelectedValuePath="Id"
             SelectedValue="{Binding Path=Person.CountryId, Mode=TwoWay}" />
 
+        <Label FontAttributes="Bold" Margin="0, 20, 0, 5" Text="These below buttons test collection scenarios" />
+
         <Button
             Command="{Binding Path=RefreshVacationSpots}"
             Text="Refresh Vacation Spots"
@@ -67,6 +69,10 @@
             Text="Add One Item to Vacation Spots"
             HorizontalOptions="Start" />
 
+        <Button
+            Command="{Binding Path=ClearToVacationSpots}"
+            Text="Clear Vacation Spots"
+            HorizontalOptions="Start" />
 
     </StackLayout>
 

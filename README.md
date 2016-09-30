@@ -11,6 +11,8 @@ This control is a replacement for the Xamarin Forms Picker.
 
 ## Bug Fixes
 
+9-30-2016 - Corrected BindablePicker to handle the view model clearing the Items ObservableCollection
+
 9-6-2016 - Corrected InternalSelectedValueChanged method to property check object equals. SelectedValuePath works with all data types now.
 
 8/12/2016 - Corrected the ItemsSource implementation, that failed to reload new collections property when the selected item was immediately reset after refreshing the ItemsSource.
