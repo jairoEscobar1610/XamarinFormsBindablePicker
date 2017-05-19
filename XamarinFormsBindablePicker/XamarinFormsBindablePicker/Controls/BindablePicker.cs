@@ -173,7 +173,7 @@
                     }
                 }
             } else if (e.Action == NotifyCollectionChangedAction.Remove) {
-                foreach (var item in e.NewItems) {
+                foreach (var item in e.OldItems) {
                     if (hasDisplayMemberPath) {
                         var type = item.GetType();
                         var prop = type.GetRuntimeProperty(this.DisplayMemberPath);
